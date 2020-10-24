@@ -1,0 +1,215 @@
+// Required
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "/node_modules/bootstrap/scss/reboot";
+@import "/node_modules/bootstrap/scss/grid";
+@import "/node_modules/bootstrap/scss/utilities/";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,700;1,900&display=swap');
+
+$font-main: 'Mulish',
+sans-serif;
+$color-blue1: #0A6CA6;
+$color-blue2: #4CCAE1;
+$color-blue3: #92CEE2;
+$color-pink: #FF6F81;
+$color-light-gray: #F9F8F8;
+$color-gray: #555555;
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-main;
+    font-size: 1.4rem;
+    background-color: $color-light-gray;
+    line-height: 1.9em;
+    color: $color-gray;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+ul li {
+    list-style: none;
+}
+
+a {
+    color: $color-blue1;
+}
+
+.br1 {
+    border-radius: 1rem;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.section {
+    margin-top: 6rem;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.bg-pink {
+    background-color: $color-pink;
+}
+
+.bg-blue3 {
+    background-color: $color-blue3;
+}
+
+// home page
+
+.index-header {
+    position: relative;
+    background: rgb(76, 202, 225);
+    background: linear-gradient(180deg, rgba(76, 202, 225, 1) 0%, rgba(47, 160, 199, 1) 59%, rgba(32, 139, 185, 1) 85%, rgba(22, 125, 177, 1) 100%);
+    border-radius: 0 0 15rem 0;
+
+    .header-in {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+
+        .nav {
+            margin-bottom: 0rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .links {
+                a {
+                    color: #fff;
+                    font-size: 1.6rem;
+                    margin-left: 4rem;
+                }
+            }
+
+            img {
+                height: 44px;
+            }
+        }
+
+        .title-area {
+            color: #fff;
+            font-size: 4rem;
+            line-height: 1.2em;
+            padding: 4rem 0;
+        }
+
+        .button-area {
+            margin-bottom: 4rem;
+            a {
+                display: inline-block;
+                padding: 1rem 2.5rem;
+                border-radius: 5rem;
+                color: #fff;
+                font-size: 1.6rem;
+                background-color: $color-blue3;
+            }
+        }
+    }
+
+    .big-valley {
+        position: absolute;
+        right: 4rem;
+        bottom: -5rem;
+        color: rgba($color: #fff, $alpha: .15);
+        font-size: 30rem;
+        font-weight: 900;
+        height: 30rem;
+        line-height: 30rem;
+    }
+}
+
+.about-this-site {
+    background-image: url(../images/A.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-blue1;
+    font-size: 3rem;
+}
+
+.blink {
+    height: 7rem;
+    line-height: 7rem;
+    text-align: center;
+    border-radius: 1rem;
+
+    a {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.header-lower {
+    background: rgb(76, 202, 225);
+    background: linear-gradient(180deg, rgba(76, 202, 225, 1) 0%, rgb(63, 183, 214) 100%);
+    border-radius: 0 0 5rem 0;
+}
+
+.section-title2 {
+    height: 6rem;
+    line-height: 6rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 3rem 0 3rem 0;
+    display: inline-block;
+    padding: 0 5rem;
+    margin-bottom: 4rem;
+}
+
+.lists-item {
+    display: flex;
+    justify-content: stretch;
+}
+
+.lists-item-in {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2.4rem 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+
+    .title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+}
+
+// footer
+.footer {
+    background: rgb(76, 202, 225);
+    background: linear-gradient(180deg,  rgba(47, 160, 199, .9) 0%, rgba(32, 139, 185, 1) 100%);
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+
+    .footer-in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        color: #fff;
+    }
+}
