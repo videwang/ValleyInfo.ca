@@ -123,7 +123,9 @@ a {
         }
 
         .button-area {
+            position: relative;
             margin-bottom: 4rem;
+            z-index: 12;
 
             a {
                 display: inline-block;
